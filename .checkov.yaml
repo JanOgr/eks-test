@@ -1,0 +1,6 @@
+skip-check: [CKV_TF_1, CKV_AWS_130, CKV2_AWS_12, CKV2_AWS_11]
+# Ignoring checks that are not relevant for the test E.g "Ensure Terraform module sources use a commit hash"
+
+skip-path:
+  - .github/workflows/deploy.yaml
+  - rabbitmq.yaml
